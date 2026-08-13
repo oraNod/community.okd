@@ -41,7 +41,7 @@ f_text_sub()
     sed -i.bak "s/Ansible Galaxy/Automation Hub/" "${_build_dir}/README.md"
     sed -i.bak "s/community-okd/redhat-openshift/" "${_build_dir}/Makefile"
     sed -i.bak "s/community\/okd/redhat\/openshift/" "${_build_dir}/Makefile"
-    sed -i.bak "s/^VERSION\:/VERSION: ${DOWNSTREAM_VERSION}/" "${_build_dir}/Makefile"
+    sed -i.bak "s/^VERSION = .*$/VERSION = ${DOWNSTREAM_VERSION}/" "${_build_dir}/Makefile"
     sed -i.bak "s/name\:.*$/name: openshift/" "${_build_dir}/galaxy.yml"
     sed -i.bak "s/namespace\:.*$/namespace: redhat/" "${_build_dir}/galaxy.yml"
     sed -i.bak "s/Kubernetes/OpenShift/g" "${_build_dir}/galaxy.yml"
