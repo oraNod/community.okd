@@ -244,4 +244,4 @@ If you encounter abusive behavior, please refer to the [policy violations](https
 
 GNU General Public License v3.0 or later
 
-See LICENCE to see the full text.
+See LICENSE to see the full text.
