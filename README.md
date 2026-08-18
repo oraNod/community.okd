@@ -105,14 +105,17 @@ Content in this collection requires the [Kubernetes Python client](https://pypi.
 
 ### Using modules from the OKD Collection in your playbooks
 
-It's preferable to use content in this collection using their Fully Qualified Collection Namespace (FQCN), for example `community.okd.openshift`:
+It's preferable to use content in this collection using their Fully Qualified Collection Namespace (FQCN), for example `community.okd.openshift_route`:
 
 ```yaml
 ---
-plugin: community.okd.openshift
-connections:
-  - namespaces:
-    - testing
+- hosts: localhost
+  tasks:
+    - name: Expose a Service as an OpenShift Route
+      community.okd.openshift_route:
+        service: frontend
+        namespace: testing
+        state: present
 ```
 
 For documentation on how to use individual plugins included in this collection, please see the links in the 'Included content' section earlier in this README.
