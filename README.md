@@ -196,18 +196,20 @@ After the version is published, verify it exists on the [OKD Collection Galaxy p
 
 ## Support
 
+This collection is maintained by Red Hat.
+
+As Red Hat Ansible Certified Content, this collection is entitled to support through Ansible Automation Platform (AAP) using the **Create issue** button on the top right corner.
+If a support case cannot be opened with Red Hat and the collection has been obtained either from Galaxy or GitHub, there may be community help available on the [Ansible Forum](https://forum.ansible.com/).
+
 <!--List available communication channels. In addition to channels specific to your collection, we also recommend to use the following ones.-->
 
-We announce releases and important changes through Ansible's [The Bullhorn newsletter](https://github.com/ansible/community/wiki/News#the-bullhorn). Be sure you are [subscribed](https://eepurl.com/gZmiEP).
-
-We take part in the global quarterly [Ansible Contributor Summit](https://github.com/ansible/community/wiki/Contributor-Summit) virtually or in-person. Track [The Bullhorn newsletter](https://eepurl.com/gZmiEP) and join us.
+We announce releases and important changes through Ansible's [Bullhorn newsletter](https://forum.ansible.com/c/news/bullhorn/17).
 
 For more information about communication, refer to the [Ansible Communication guide](https://docs.ansible.com/ansible/devel/community/communication.html).
 
 For the latest supported versions, refer to the release notes below.
 
-If you encounter issues or have questions, you can submit a support request through the following channels:
- - GitHub Issues: Report bugs, request features, or ask questions by opening an issue in the [GitHub repository](https://github.com/openshift/community.okd/).
+If you encounter issues or have questions, you can report bugs, request features, or ask questions by opening an issue in the [GitHub repository](https://github.com/openshift/community.okd/).
 
 ## Release notes
 
