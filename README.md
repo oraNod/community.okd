@@ -21,28 +21,7 @@ The collection includes a variety of Ansible content to help automate the manage
 
 For more information about communication, see the [Ansible communication guide](https://docs.ansible.com/ansible/devel/community/communication.html).
 
-## Requirements
-
-<!--start requires_ansible-->
-### Ansible version compatibility
-
-This collection has been tested against following Ansible versions: **>=2.16.0**.
-
-Please ensure to update the `network_os` to use the fully qualified collection name (for example, `cisco.ios.ios`).
-Plugins and modules within a collection may be tested with only specific Ansible versions.
-A collection may contain metadata that identifies these versions.
-PEP440 is the schema used to describe the versions of Ansible.
-<!--end requires_ansible-->
-
-### Python Support
-
-* Collection supports 3.9+
-
-### Kubernetes Version Support
-
-This collection supports Kubernetes versions >=1.24.
-
-### Included content
+## Included content
 
 Click on the name of a plugin or module to view that content's documentation:
 
@@ -77,6 +56,39 @@ Name | Description
 <!--end collection content-->
 
 <!--- ENDREMOVE --->
+
+## Requirements
+
+<!--start requires_ansible-->
+### Ansible version compatibility
+
+This collection has been tested against following Ansible versions: **>=2.16.0**.
+
+Plugins and modules within a collection may be tested with only specific Ansible versions.
+A collection may contain metadata that identifies these versions.
+PEP440 is the schema used to describe the versions of Ansible.
+<!--end requires_ansible-->
+
+### Python version compatibility
+
+This collection requires Python 3.9 or later.
+
+### Python dependencies
+
+The following Python packages are required:
+
+- [kubernetes](https://pypi.org/project/kubernetes/) >= 12.0.0
+- [requests-oauthlib](https://pypi.org/project/requests-oauthlib/)
+
+### Kubernetes version compatibility
+
+This collection supports Kubernetes versions >= 1.24.
+
+### Collection dependencies
+
+This collection requires the following Ansible collections:
+
+- [kubernetes.core](https://galaxy.ansible.com/ui/repo/published/kubernetes/core/) >= 3.0.0
 
 ## Installation
 
