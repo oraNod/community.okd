@@ -37,13 +37,9 @@ concurrency:
 # for each affected version of ansible-core (for example, `tests/sanity/ignore-2.18.txt`) and add corresponding entries.
 jobs:
   call:
-    uses: ansible-collections/partner-certification-checker/.github/workflows/certification-reusable.yml@v4.0.0 # zizmor: ignore[unpinned-uses]
-    # For details on tested ansible-core branches and Python versions,
-    # see: https://github.com/ansible-collections/partner-certification-checker#tested-ansible-core-branches-and-python-versions
-    # with:
-    #   ansible-core-version: '2.18.0'
-    #   collection-root: 'ansible_collections/junipernetworks/junos'
-    #   automation-hub: true
+    uses: oraNod/partner-certification-checker/.github/workflows/certification-reusable.yml@main
+    with:
+      collection-deps: "kubernetes.core"
     # Uncomment the lines below if you have 'automation-hub: true' and need to install collections from Red Hat Ansible Automation Hub.
     # This requires setting a repository secret called 'AH_TOKEN' which value contains a Red Hat Ansible Automation Hub token.
     # secrets:
