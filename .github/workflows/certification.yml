@@ -38,8 +38,6 @@ concurrency:
 jobs:
   call:
     uses: oraNod/partner-certification-checker/.github/workflows/certification-reusable.yml@main
-    with:
-      collection-deps: "kubernetes.core community.general amazon.aws"
     # Uncomment the lines below if you have 'automation-hub: true' and need to install collections from Red Hat Ansible Automation Hub.
     # This requires setting a repository secret called 'AH_TOKEN' which value contains a Red Hat Ansible Automation Hub token.
     # secrets:
