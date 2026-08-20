@@ -37,7 +37,7 @@ concurrency:
 # for each affected version of ansible-core (for example, `tests/sanity/ignore-2.18.txt`) and add corresponding entries.
 jobs:
   call:
-    uses: oraNod/partner-certification-checker/.github/workflows/certification-reusable.yml@main
+    uses: ansible-collections/partner-certification-checker/.github/workflows/certification-reusable.yml@v4.1.0
     # Uncomment the lines below if you have 'automation-hub: true' and need to install collections from Red Hat Ansible Automation Hub.
     # This requires setting a repository secret called 'AH_TOKEN' which value contains a Red Hat Ansible Automation Hub token.
     # secrets:
